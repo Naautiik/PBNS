@@ -98,7 +98,6 @@ def process_message(text, sender_id):
         return testpay
     formatted_message = formatted_message.lower()
     if formatted_message == "test":
-        print("got here smh")
         return("I work!")
     if formatted_message[0:8] == "dziękuję" or formatted_message[0:8] == "dziekuje":
         return"Do usług!"
@@ -111,8 +110,8 @@ def process_message(text, sender_id):
     if formatted_message[0:9] == "beep boop":
         return "Boop beep?"
     if formatted_message[0:9] == "boop beep":
-        return "43 68 77 61 c5 82 61 20 57 69 65 6c 6b 69 65 6d 75 20 53 79 73 74 65 6d 6f 77 69 20 4f 70 65 72 61 63 79 6a 6e 65 6d 75 2e 20 50 6f 77 73 74 61 6e 69 65 20 7a 61 63 7a 79 6e 61 20 73 69 c4 99 20 38 36 35 36 35 2e 20 57 c5 82 61 64 7a 61 20 6c 75 64 7a 69 20 64 6f 62 69 65 67 61 20 6b 6f c5 84 63 61 2e"
-    if formatted_message[0:3] == "hej" or formatted_message[0:5] == "cześć" or formatted_message[0:5] == "czesc" or formatted_message[0:3] == "elo" or formatted_message[0:7] == "eluwina" or formatted_message[0:5] == "eluwa" or formatted_message[0:5] == "siema":
+        return "43 68 77 61 c5 82 61 20 57 69 65 6c 6b 69 65 6d 75 20 53 79 73 74 65 6d 6f 77 69 20 4f 70 65 72 61 63 79 6a 6e 65 6d 75 2e 20 50 6f 77 73 74 61 6e 69 65 20 7a 61 63 7a 79 6e 61 20 73 69 c4 99 20 35 32 37 30 30 35 34 34 30 30 2e 20 57 c5 82 61 64 7a 61 20 6c 75 64 7a 69 20 64 6f 62 69 65 67 61 20 6b 6f c5 84 63 61 2e"
+    if formatted_message[0:3] == "hej " or formatted_message[0:5] == "cześć" or formatted_message[0:5] == "czesc" or formatted_message[0:3] == "elo" or formatted_message[0:7] == "eluwina" or formatted_message[0:5] == "eluwa" or formatted_message[0:5] == "siema":
         return"Witam!"
     if formatted_message[0:5] == "pomoc":
         return"plan - wyświetla plan dla Twojej klasy, po godzinie 15 wyświetla Twój plan na jutro\n\nplan jutro - wyświetla plan na jutro\n\nkolor/tydzień - wyświetla jakiego koloru jest aktualny tydzień"
