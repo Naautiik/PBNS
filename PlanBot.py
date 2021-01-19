@@ -33,7 +33,7 @@ def dateupdate():
     global today
     #numer tygodnia określający kolor, +1 wynika z tego że niebieski = 0 ale tygodnie mod 2 = 0 są pomarańczowe
     weeknum = int((datetime.today().strftime('%V')))
-    weeknum = (weeknum+1) % 2
+    weeknum = (weeknum) % 2
     #numer dnia w formacie 0-4 - pon-pt
     today = (datetime.today().weekday())
     #print(f"updated datenums are {today} and {weeknum}")
